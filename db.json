@@ -1,0 +1,25 @@
+{
+  "todo": [
+    {
+      "id": "1",
+      "name": "Do the thing",
+      "priority": 1,
+      "complete": false,
+      "edit": false
+    },
+    {
+      "id": "2",
+      "name": "Do the next thing",
+      "priority": 2,
+      "complete": false,
+      "edit": false
+    },
+    {
+      "id": "3",
+      "name": "Do the last thing",
+      "priority": 3,
+      "complete": false,
+      "edit": false
+    }
+  ]
+}
