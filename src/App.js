@@ -45,7 +45,6 @@ function App() {
   const fetchTasks = async () => {
     const res = await fetch('http://localhost:5000/todo');
     const data = await res.json();
-    console.log(data);
     return data;
   }
 

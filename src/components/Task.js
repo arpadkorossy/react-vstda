@@ -1,12 +1,14 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import editIcon from '../edit.svg';
 import deleteIcon from '../delete.svg';
 import checkmark from '../checkmark.svg'
 import EditTask from './EditTask';
 
 function Task({task, onDelete, onEdit}) {
-    const [showEditTask, setShowEditTask] = useState(task.edit);
+    const [showEditTask, setShowEditTask] = useState(false);
 
+    useEffect(() => { setShowEditTask(task.edit)}, [task] )
+   
     let priorityName;
     switch (task.priority) {
         case 1:
